@@ -18,7 +18,7 @@ However, more than half of all initially detected transit-like signals in wide-f
 Transit Scope resolves this challenge by directly extracting physical discriminators from phase-folded light curves:
 - **Odd vs. Even Transit Depth Difference:** Genuine planets exhibit identical depths every orbit; eclipsing binaries alternate in depth.
 - **Secondary Eclipse Depth (&phi; = 0.5):** Planets emit negligible optical light; a detectable anti-phase dip signifies a self-luminous companion star.
-- **Signal-to-Noise Ratio (SNR):** Evaluated against the canonical 7.1&sigma; TESS detection threshold.
+- **Signal-to-Noise Ratio (SNR):** Evaluated against the canonical 7.1&sigma; TESS detection threshold. 
 
 ---
 
