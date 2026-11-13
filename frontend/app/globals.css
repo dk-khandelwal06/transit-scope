@@ -1,0 +1,206 @@
+@import "tailwindcss";
+
+/* 
+ * Transit Scope - Retro-Futuristic Space Observatory Themes
+ * 3 Complete Themes: Light, Medium, Dark
+ */
+
+:root, [data-theme="dark"] {
+  --bg-primary: #060911;
+  --bg-surface: #0D131F;
+  --bg-surface-elevated: #131D2E;
+  --bg-instrument: #0A0F1A;
+  --border-color: rgba(34, 211, 238, 0.16);
+  --border-strong: rgba(34, 211, 238, 0.35);
+  --border-subtle: rgba(255, 255, 255, 0.07);
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+  --accent-cyan: #22D3EE;
+  --accent-amber: #F59E0B;
+  --accent-ruby: #F87171;
+  --accent-emerald: #34D399;
+  --grid-pattern: rgba(34, 211, 238, 0.04);
+  --instrument-screw: #1E293B;
+  --glow-cyan: 0 0 15px rgba(34, 211, 238, 0.25);
+  --glow-amber: 0 0 15px rgba(245, 158, 11, 0.25);
+  --bezel-gradient: linear-gradient(180deg, #1A2436 0%, #0D131F 100%);
+}
+
+[data-theme="medium"] {
+  --bg-primary: #181F2C;
+  --bg-surface: #222C3D;
+  --bg-surface-elevated: #2B374B;
+  --bg-instrument: #1B2433;
+  --border-color: rgba(148, 163, 184, 0.22);
+  --border-strong: rgba(148, 163, 184, 0.40);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+  --accent-cyan: #38BDF8;
+  --accent-amber: #F59E0B;
+  --accent-ruby: #EF4444;
+  --accent-emerald: #10B981;
+  --grid-pattern: rgba(255, 255, 255, 0.05);
+  --instrument-screw: #334155;
+  --glow-cyan: 0 0 10px rgba(56, 189, 248, 0.2);
+  --glow-amber: 0 0 10px rgba(245, 158, 11, 0.2);
+  --bezel-gradient: linear-gradient(180deg, #2E3B50 0%, #202939 100%);
+}
+
+[data-theme="light"] {
+  --bg-primary: #F7F4EE;
+  --bg-surface: #EDE8DE;
+  --bg-surface-elevated: #E3DDD0;
+  --bg-instrument: #E8E2D6;
+  --border-color: rgba(0, 0, 0, 0.14);
+  --border-strong: rgba(0, 0, 0, 0.28);
+  --border-subtle: rgba(0, 0, 0, 0.06);
+  --text-primary: #1C212B;
+  --text-secondary: #4A5568;
+  --text-muted: #718096;
+  --accent-cyan: #0284C7;
+  --accent-amber: #B45309;
+  --accent-ruby: #DC2626;
+  --accent-emerald: #059669;
+  --grid-pattern: rgba(0, 0, 0, 0.04);
+  --instrument-screw: #D0C7B8;
+  --glow-cyan: none;
+  --glow-amber: none;
+  --bezel-gradient: linear-gradient(180deg, #F3EFE7 0%, #E2DCD0 100%);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  overflow-x: hidden;
+}
+
+/* Scientific typography classes */
+.font-astronomy {
+  font-family: Georgia, "Times New Roman", "Playfair Display", serif;
+  letter-spacing: -0.01em;
+}
+
+.font-telemetry {
+  font-family: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-feature-settings: "tnum" on, "zero" on;
+}
+
+/* Measurement grid background */
+.bg-observatory-grid {
+  background-image: 
+    linear-gradient(to right, var(--grid-pattern) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-pattern) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-observatory-grid-fine {
+  background-image: 
+    linear-gradient(to right, var(--grid-pattern) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-pattern) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Starfield texture (active on dark and medium modes) */
+[data-theme="dark"] .starfield-bg {
+  background-image: 
+    radial-gradient(1px 1px at 20px 30px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 40px 70px, #22d3ee, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 90px 40px, #fde047, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 160px 120px, #ffffff, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 250px 190px, #38bdf8, rgba(0,0,0,0)),
+    radial-gradient(1.5px 1.5px at 310px 80px, #f87171, rgba(0,0,0,0)),
+    radial-gradient(1px 1px at 420px 240px, #ffffff, rgba(0,0,0,0));
+  background-repeat: repeat;
+  background-size: 480px 480px;
+}
+
+/* Instrument panel container with vintage hardware aesthetic */
+.instrument-panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+}
+
+/* Retro metallic screw corner markers */
+.instrument-panel::before,
+.instrument-panel::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--instrument-screw);
+  border: 1px solid var(--border-color);
+}
+.instrument-panel::before {
+  top: 8px;
+  left: 8px;
+}
+.instrument-panel::after {
+  bottom: 8px;
+  right: 8px;
+}
+
+/* Reticle crosshair marker */
+.reticle-mark {
+  position: relative;
+}
+.reticle-mark::after {
+  content: "+";
+  position: absolute;
+  font-family: monospace;
+  font-size: 11px;
+  color: var(--accent-cyan);
+  opacity: 0.6;
+}
+
+/* Status indicator LEDs */
+.led-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.led-cyan {
+  background-color: var(--accent-cyan);
+  box-shadow: 0 0 8px var(--accent-cyan);
+}
+
+.led-amber {
+  background-color: var(--accent-amber);
+  box-shadow: 0 0 8px var(--accent-amber);
+}
+
+.led-emerald {
+  background-color: var(--accent-emerald);
+  box-shadow: 0 0 8px var(--accent-emerald);
+}
+
+.led-ruby {
+  background-color: var(--accent-ruby);
+  box-shadow: 0 0 8px var(--accent-ruby);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}

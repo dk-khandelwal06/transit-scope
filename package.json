@@ -1,0 +1,26 @@
+{
+  "name": "transit-scope",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Teaching a computer to tell a real planet's shadow from an impostor in a star's light.",
+  "scripts": {
+    "dev": "node scripts/start-dev.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "python -m uvicorn backend.app.main:app --host 0.0.0.0 --port 8000 --reload",
+    "build": "cd frontend && npm run build",
+    "test": "pytest backend/tests/test_scientific_pipeline.py -v",
+    "test:frontend": "cd frontend && npm run lint"
+  },
+  "keywords": [
+    "astronomy",
+    "astrophysics",
+    "exoplanet",
+    "transit",
+    "light-curve",
+    "machine-learning",
+    "tess",
+    "nasa"
+  ],
+  "author": "Transit Scope Team",
+  "license": "MIT"
+}
