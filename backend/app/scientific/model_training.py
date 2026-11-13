@@ -414,3 +414,4 @@ class ModelTrainer:
 
 # Singleton model trainer instance
 model_trainer = ModelTrainer()
+

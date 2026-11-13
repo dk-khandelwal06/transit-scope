@@ -172,3 +172,4 @@ All 9 tests execute and validate the pipeline integrity without mocks or fabrica
 ## Scientific Disclaimer
 
 Transit Scope machine-learning predictions and signal diagnostic scores are provided for automated statistical screening and scientific investigation. They do not constitute formal astronomical validation or official planetary confirmation by NASA or the TESS Follow-up Observing Program (TFOP). Definitive confirmation requires ground-based high-resolution spectroscopy (radial velocity) and high-contrast speckle imaging.
+

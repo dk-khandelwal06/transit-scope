@@ -186,3 +186,4 @@ class FeatureExtractor:
 
 # Singleton feature extractor
 feature_extractor = FeatureExtractor()
+

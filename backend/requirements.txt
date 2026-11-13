@@ -12,3 +12,4 @@ python-multipart>=0.0.9
 matplotlib>=3.8.0
 astropy>=6.0.0
 lightkurve>=2.4.0
+

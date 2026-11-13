@@ -151,3 +151,4 @@ def test_pdf_report_generation():
     pdf_bytes = analysis_service.export_pdf_report(report)
     assert len(pdf_bytes) > 1000
     assert pdf_bytes.startswith(b"%PDF")
+

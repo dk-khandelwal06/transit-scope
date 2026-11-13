@@ -195,3 +195,4 @@ export async function getModelMetrics(): Promise<ModelIntelligenceResponse> {
 export function getPdfDownloadUrl(analysisId: string): string {
   return `${API_BASE_URL}/api/reports/${encodeURIComponent(analysisId)}?format=pdf`;
 }
+

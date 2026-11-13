@@ -118,3 +118,4 @@ export function ConfusionMatrix({ matrix, modelName, config }: ConfusionMatrixPr
     </div>
   );
 }
+

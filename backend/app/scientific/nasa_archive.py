@@ -474,3 +474,4 @@ class NasaArchiveClient:
 
 # Module-level singleton
 nasa_archive = NasaArchiveClient()
+

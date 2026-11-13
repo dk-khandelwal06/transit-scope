@@ -585,3 +585,4 @@ export function ScientificChart({
     </div>
   );
 }
+

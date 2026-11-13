@@ -404,3 +404,4 @@ class LightCurveProcessor:
 
 # Singleton processor instance
 lightcurve_processor = LightCurveProcessor()
+

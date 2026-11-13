@@ -51,3 +51,4 @@ Thumbs.db
 !backend/data/toi_catalog_cache.json
 !backend/app/models/*.joblib
 !backend/app/models/*.json
+

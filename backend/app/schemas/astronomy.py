@@ -142,3 +142,4 @@ class FullAnalysisReport(BaseModel):
     prediction_lightcurve: ClassificationPrediction
     data_quality_flags: List[str]
     scientific_disclaimer: str
+

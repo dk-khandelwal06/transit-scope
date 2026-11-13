@@ -148,3 +148,4 @@ def export_report(analysis_id: str, format: str = Query("json", description="'js
             )
 
     return report
+
