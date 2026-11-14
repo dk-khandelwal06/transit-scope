@@ -26,6 +26,8 @@ and uses supervised machine learning to separate genuine planetary transits from
   <a href="https://transit-scope-three.vercel.app/"><b>Live Demo</b></a>
   &nbsp;&middot;&nbsp;
   <a href="https://github.com/dk-khandelwal06/transit-scope"><b>GitHub Repository</b></a>
+  &nbsp;&middot;&nbsp;
+  <a href=""><b>Demo Video</b></a>
 </p>
 
 </div>
@@ -214,12 +216,12 @@ Six physical features are measured from the processed light curve. Together they
 
 **[transit-scope-three.vercel.app](https://transit-scope-three.vercel.app/)**
 
-**GitHub Repository**
+**GitHub Repository**  
 [github.com/dk-khandelwal06/transit-scope](https://github.com/dk-khandelwal06/transit-scope)
 
-**Connect with the Author**
-Daksh Khandelwal
-[linkedin.com/in/daksh-khandelwal-b02748391](https://www.linkedin.com/in/daksh-khandelwal-b02748391/)
+**Connect with the Author**  
+Daksh Khandelwal  
+[LinkedIn](https://www.linkedin.com/in/daksh-khandelwal-b02748391/)
 
 <br/>
 
